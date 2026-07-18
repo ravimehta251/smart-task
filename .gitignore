@@ -1,0 +1,44 @@
+# ============================================================
+# SmartTask Enterprise — .gitignore
+# ============================================================
+
+# Maven build output
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code / Eclipse
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Spring Boot
+*.log
+logs/
+
+# Local uploads (never commit user files)
+uploads/
+
+# Environment / secrets — NEVER commit these
+.env
+.env.local
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+mysql_data/
+app_uploads/
+app_logs/
